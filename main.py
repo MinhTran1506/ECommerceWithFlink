@@ -37,7 +37,7 @@ def main():
 
     curr_time = datetime.now()
 
-    while (datetime.now() - curr_time).seconds < 120:
+    while (datetime.now() - curr_time).seconds < 240:
         try:
             transaction = generate_sales_transactions()
             transaction['totalAmount'] = transaction['productPrice'] * transaction['productQuantity']
@@ -52,8 +52,8 @@ def main():
             )
             producer.poll(0)
 
-            # Wait for 5 seconds before sending the next transaction
-            time.sleep(5)
+            # Wait for 2 seconds before sending the next transaction
+            time.sleep(2)
         
         except BufferError:
             print("Buffer full! Waiting...")
@@ -61,6 +61,7 @@ def main():
 
         except Exception as e:
             print(e)
+    producer.flush()
 
 if __name__ == "__main__":
     main()

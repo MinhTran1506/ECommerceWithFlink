@@ -23,3 +23,26 @@ Thumbs.db
 
 # Ignore node_modules for JavaScript projects
 node_modules/
+
+target/
+*.log
+*.iml
+*.idea/
+*.classpath
+*.project
+*.settings/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Generated files
+*.class
+*.jar
+*.war
+*.ear
+*.zip
