@@ -24,7 +24,7 @@ The main objective of this project is to create a real-time data streaming appli
 - **Kibana** for data visualization.
 
 ## Architecture
-![System Architecture](system_architecture.png)
+![System Architecture](images/system_architecture.png)
 The project architecture consists of several interconnected components:
 
 1. **Data Generator**: Generates synthetic sales transactions and sends them to Kafka.
@@ -106,13 +106,13 @@ Configuration files for each component are provided:
 
 #### Flink UI
 - Contains all the information about the current Apache Flink stream.
-![alt text](images/flink_ui.png)
+![Flink UI](images/flink_ui.png)
 
 #### Dashboards
 - **Dashboard 1**: First dashboard to visualize the data.
-![alt text](images/dashboard_1.png)
+![Dashboard 1](images/dashboard_1.png)
 - **Dashboard 2**: Dashboard after data is fetch in real-time.
-![alt text](images/dashboard_2.png)
+![Dashboard 2](images/dashboard_2.png)
 
 ## Project Structure
 ```css
